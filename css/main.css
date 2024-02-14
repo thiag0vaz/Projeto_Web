@@ -1,0 +1,146 @@
+body {
+    font-family: "Western", cursive;
+    background-color: #f5ecd5;
+    background-image: url('https://img.freepik.com/fotos-gratis/fundo-de-papel-velho-estilo-grunge_1048-7928.jpg?w=740&t=st=1707929922~exp=1707930522~hmac=e2ed44829fd8e375c2297007135a07d3cc6aa6e9a85744cb7327b413870acf73');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1:first-of-type {
+    text-align: center;
+    margin-top: 20px;
+    color: #000000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
+    font-size: 50px;
+}
+
+h1:last-of-type {
+    text-align: center;
+    margin-top: 40px;
+    color: #000000; 
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+}
+
+.cartaz-de-procurado-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+.cartaz, .cartaz2, .cartaz3 {
+    flex-grow: 1; /* Para ocupar o espaço disponível igualmente */
+    width: calc(40% - 10px); /* Define uma largura fixa para os cartazes */
+    padding: 20px;
+    background-color: #f1dcb1;
+    border: 2px solid #88683a; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Adiciona transição para o efeito de zoom */
+    background-image: url('https://st2.depositphotos.com/3647713/49332/i/450/depositphotos_493328306-stock-photo-old-grunge-antique-paper-texture.jpg');
+    background-repeat: repeat;
+    margin-bottom: 20px; /* Espaçamento entre os cartazes */
+    margin-top: 50px;
+}
+
+.cartaz:not(:last-child), .cartaz2:not(:last-child), .cartaz3:not(:last-child) {
+    margin-right: 40px; /* Adiciona margem à direita de cada cartaz, exceto o último */
+}
+
+.cartaz:hover, .cartaz2:hover, .cartaz3:hover {
+    transform: scale(1.20); /* Efeito de zoom */
+}
+/*Adptar para tela de celular (falta testar)*/
+@media screen and (max-width: 1100px) {
+    .cartaz, .cartaz2, .cartaz3 {
+        width: 31%; /* Ajusta a largura dos cartazes para caberem em telas menores */
+    }
+}
+
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.titulo h2 {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.cartaz .titulo h1,
+.cartaz .titulo h2,
+.cartaz2 .titulo h1,
+.cartaz2 .titulo h2,
+.cartaz3 .titulo h1,
+.cartaz3 .titulo h2,
+.cartaz .poster p,
+.cartaz2 .poster p,
+.cartaz3 .poster p {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    transform: rotate(-1deg);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.foto {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    background-color: #ccc;
+    border: 2px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.poster {
+    text-align: center;
+}
+
+.poster p {
+    margin: 5px 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.icones-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icone {
+    position: relative;
+    width: calc(20% - 20px);
+    padding: 10px;
+    background-color: none;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+
+.icone img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Garante que a imagem se ajuste corretamente dentro do link */
+    border-radius: 5px; /* Adicione borda arredondada se desejar */
+}
+
+.icone a {
+    display: block; /* Garante que o link ocupe todo o espaço do ícone */
+    text-decoration: none;
+    color: inherit; /* Herda a cor do texto do contêiner pai */
+}
+
+.icone:hover {
+    transform: scale(1.3);
+}
