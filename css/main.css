@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "American Western";
+    src: url('../fontes/American\ Western.ttf') format('truetype');
+    /* Outros estilos opcionais */
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: "American Western", sans-serif;
     background-color: #f5ecd5;
